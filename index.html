@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
+    <title>Dev Camp</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Dev Camp</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What you'll learn?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-info">Web Developer</span></h1>
+                    <p class="lead my-4">This <span class="text-info">Camp</span> is a place where you can start your
+                        programming journey from zero. We aim to train everyone to be
+                        industry-ready.</p>
+                    <button type="button" class="btn btn-outline-info btn-lg" data-bs-toggle="modal"
+              data-bs-target="#enroll">Enroll Yourself!</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/coding.svg" alt="Coder">
+            </div>
+        </div>
+
+    </section>
+    <!-- Newsletter -->
+    <section class="bg-info text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="color mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter your Email">
+                    <button class="btn btn-dark btn-md" type="button" id="button-addon2">Button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-info">Virtual</h3>
+                            <p class="card-text">
+                                Skill yourself with the comfort of your house through vitual bootcamp of ours.
+                            </p>
+                            <a href="#" class="btn btn-outline-light">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-info">Hybrid</h3>
+                            <p class="card-text">
+                                A mix of both online and offline expereince. 3 months of virtual and the rest 3 in
+                                person.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3 text-info">In Person</h3>
+                            <p class="card-text">
+                                Study with all the smart thinkers around and take help from mentors.
+                            </p>
+                            <a href="#" class="btn btn-outline-light">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-centre justify-content-between">
+                <div class="col-md">
+                    <img src="img/skills.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Make Fundamentals Strong</h2>
+                    <p class="lead">
+                        Learn HTML5, CSS3 and JavaScript in the Foundation Bootcamp and upskill yourself by building
+                        projects.
+                    </p>
+                    <p>
+                        Under the guidence of mentors crack the interview by knowing basics of Web Development. The
+                        foundation batch will start from August 10, 2021. Apply Now!
+                    </p>
+                    <a href="#" class="btn btn-outline-dark mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
+                </div>
+            </div>
+    </section>
+    <!-- React -->
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-centre justify-content-between ">
+                <div class="col-md">
+                    <h2>Advanced Bootcamp - ReactJS</h2>
+                    <p class="lead">
+                        React makes it painless to create interactive UIs.t is maintained by Facebook and a community of
+                        individual developers and companies.
+                    </p>
+                    <p>
+                        Under the guidence of mentors crack the interview by knowing basics to advanced of React. The
+                        advanced batch will
+                        start from August 30, 2021. Apply Now!
+                    </p>
+                    <p class="text-warning"><i class="bi bi-exclamation-triangle-fill"></i> Must have completed
+                        Foundation Bootcamp!</p>
+                    <a href="#" class="btn btn-outline-light mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
+
+                </div>
+                <div class="col-md p-5">
+                    <img src="img/react.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+    </section>
+
+    <!-- Questions -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Where are we located?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">We are located in Bhubaneshwar India. Pincode - 751024</div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How much is the price of bootcamps?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            <strong>Foundation Bootcamp:</strong>
+                            Rs. 4000 (including taxes)
+                            <strong>Advanced Bootcamp:</strong>
+                            Rs 5000 (including taxes)
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            What are the prerequisites?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                        <div class="accordion-body">You just need a strong will to learn and grow.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            What shall I get in return?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">You will get exclusive swags from us and also top performers will be
+                            given internship opportunity and cash prices.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Do you help me find a job?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">After the bootcamp you can get internships and full time dev roles
+                            at various startups. We will provide assistance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- instructors -->
+    <section id="instructors" class="p-5 bg-info">
+        <div class="container">
+            <h2 class="text-center">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5 font-monospace">Our Instructors have more than 5 years of working
+                as a Web Developer</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3">Somnath</h3>
+                            <p class="card-text">
+                                MERN Stack Instructor and SDE at Facebook.
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3">Raj Padhi</h3>
+                            <p class="card-text">
+                                React Developer and SDE Intern at Amazon
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3">Satyam Das</h3>
+                            <p class="card-text">
+                                Lead Machine Learning Engineer at SAP Labs
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle mb-3"
+                                alt="" />
+                            <h3 class="card-title mb-3">Kali Sahu</h3>
+                            <p class="card-text">
+                                DevOps Instructor and SDE-2 at Cognizant
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact and MAP -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">
+                        Contact Info
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item"><span class="fw-bold">Main Location:</span> Patia, Bhubaneshwar</li>
+                        <li class="list-group-item"><span class="fw-bold">Phone:</span> +91 1234567890</li>
+                        <li class="list-group-item"><span class="fw-bold">Email Us:</span> info@devcamp.com</li>
+                        <li class="list-group-item"><span class="fw-bold">Motto:</span> Upskilling India</li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-center text-white position-relative">
+        
+        <div class="container p-4 pb-0">
+            
+            <section class="mb-3">
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+    
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+    
+            
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
+    
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+    
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+    
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
+            </section>
+            <a href="#" class="text-info position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+            
+        </div>
+        
+    
+        
+        <div class="text-center p-2" style="background-color: #212529;">
+            <p class="lead">Copyright &copy; 2021 Dev Camp</p>
+            
+        </div>
+
+        
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="last-name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYW5pcnVkaHBhbmRhIiwiYSI6ImNrcHI4czF6aDA2MXgyeHBtOGRybmc3am0ifQ.Qa122TrLn6ScDxoG8R7GCg';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [85.8266, 20.3533 ],
+            zoom: 13
+        });
+    </script>
+</body>
+
+</html>
