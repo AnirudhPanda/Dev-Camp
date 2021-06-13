@@ -1,7 +1,7 @@
 
 # Dev Camp
 
-Bootcamps for Web Developers
+Bootcamp for Web Developers
 
 
 ## Screenshots
